@@ -1,0 +1,22 @@
+#blog h3, h4{
+	text-align: center;
+}
+
+#blog .contenedor{
+	/*display flex como esta dentro de un contenedor hace que los elementos
+	dentro de ellas, comunmente fotos se adapten por si solas, ademas de 
+	alinearlas automaticamente segun el tamano de pantalla*/
+	display: flex;
+	justify-content: center;
+	/*el flex: wrap hace que los elementos que no quepan se pongan debajo*/
+	flex-wrap: wrap;
+}
+
+#blog article{
+	margin: 10px;
+}
+
+#blog img{
+	width: 100%;
+	max-width: 280px;
+}

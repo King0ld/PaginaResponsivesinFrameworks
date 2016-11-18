@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/fontello.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<title>MyPets</title>
+</head>
+<body>
+	<header>
+		<div class="contenedor">
+			<!-- La clase icon-dog es para llamar al icono del perrito pero antes debemos vincular la hoja de estilo-->
+			<h1 class="icon-dog">MyPets</h1>
+
+			<!-- El checkbox sirve para activar o desactivar el menu desplegable osea para que cuando se le de click al menu bar que hace referencia con el for osea el for del label es igual que el id del input-->
+			<input type="checkbox" id="menu-bar">
+			<!-- Este label es el menu desplegable -->
+			<label class="icon-menu" for="menu-bar"></label>
+			<nav class="menu">
+				<ul>
+					<li><a href="">Inicio</a></li>
+					<li><a href="">Mascotas</a></li>
+					<li><a href="">Blog</a></li>
+					<li><a href="">Contacto</a></li>
+				</ul>	
+			</nav>
+		</div>
+	</header>
+	
+	<!-- El main quiere hacer referencia que es la parte principal -->
+	<main>
+		<section id="banner">
+			<img alt="banner" src="img/banner.jpg">
+			<!-- Hat que poner los elementos como parrafos, enlaces, y titulos dentro de un contenedor para darle propiedades css en grupo-->
+			<div class="contenedor">
+				<h2>Mascotas y niños felices</h2>
+				<p>¿Cuál es la mejor mascota para usted?</p>
+				<a href="#">Leer más</a>
+			</div>	
+		</section>
+
+		<section id="bienvenidos">
+			<div class="contenedor">
+				<h2>Bienvenidos a nuestro club</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis similique consectetur iusto reprehenderit laudantium ab magni fuga nostrum rerum odio quos, tempora, error aperiam eius illum veniam fugit expedita suscipit.
+				</p>		
+			</div>	
+		</section>
+
+		<section id="blog">
+			<h3>Lo último de nuestro blog</h3>
+			<div class="contenedor">
+				<article>
+					<img src="img/pet-blog1.jpg" alt="">
+					<h4>Escoge tu mascota perfecta</h4>
+				</article>
+				<article>
+					<img src="img/pet-blog2.jpg" alt="">
+					<h4>Los animales necesitan cariño</h4>
+				</article>
+				<article>
+					<img src="img/pet-blog3.jpg" alt="">
+					<h4>Camina con tu mascota</h4>
+				</article>
+			</div>
+		</section>
+
+		<section id="info">
+			<h3>Para muchos de nosotros las mascotas no son simples compañeros, son miembros de nuestra familia.</h3>
+			<div class="contenedor">
+				<div class="info-pet">
+					<img src="img/pet1.jpg" alt="perro">
+					<h4>Pitter</h4>
+				</div>
+				<div class="info-pet">
+					<img src="img/pet2.jpg" alt="conejo">
+					<h4>Gungo</h4>
+				</div>
+				<div class="info-pet">
+					<img src="img/pet3.jpg" alt="gato">
+					<h4>Michi</h4>
+				</div>
+				<div class="info-pet">
+					<img src="img/pet4.jpg" alt="cotorra">
+					<h4>Manuelito</h4>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+        <div class="container-fluid c-footer">
+          <div class="contenedor">
+            <p class="pull-right bottom-link"><a data-scroll-goto='0'><button class="btn btn-success btn-c"><span class="glyphicon glyphicon-menu-up"></span></button></a></p>
+            <p class="copy">&copy; 2016 XSITIC S.R.L</p>
+            <br>
+            <p class="copy">Contacto: 829-573-5022 E-mail: c.arias@xsitic.com</p>
+            <div class="sociales">
+              <a class="icon-facebook" href="#"></a>
+              <a class="icon-twitter" href="#"></a>
+              <a class="icon-instagram" href="#"></a>
+              <a class="icon-googleplus" href="#"></a>
+            </div>
+          </div>  
+        </div> 
+      </footer>
+</body>
+</html>

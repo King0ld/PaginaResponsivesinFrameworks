@@ -1,0 +1,83 @@
+#menu-bar{
+	/*display none oculta o mostrar elementos pero este no deja
+	ningun espacio donde se oculto osea que el documento se adapta
+	con el contenido que se oculto (no se elimino)*/
+	display: none;
+}
+
+header label{
+	float: right;
+	font-size:28px;
+	margin: 6px 0;
+	cursor: pointer;
+}
+
+/*Para que el translate funcione deberia ponerse en el menu no en ninguna
+propiedad con alguna psdoclase*/
+.menu{
+	position: absolute;
+	/*Este TOP sirve para que el menu responsive empieze debajo del menu 
+	principal*/
+	top:50px;
+	left:0;
+	width: 100%;
+	height: 100vh;
+	background: rgba(51,51,51,.9);
+	/*El transition es para darle un efecto de relantizar o aumentar la velocidad
+	en que se efectua algun efecto*/
+	transition: all 0.5s;
+	/*el transform translate translada el elemento hacia la direccion X o Y
+	y el porcentaje (-100%) quiere decir que se transladara hasta horizontalmente
+	hasta que se salga de la pagina*/
+	transform: translateX(-100%);
+	
+
+}
+
+.menu a{
+	display: block;
+	color: #fff;
+	height: 50px;
+	text-decoration: none;
+	/*El padding es para que se separe un poco de todos los lados y quenden
+	un poquito mejor*/
+	padding: 15px;
+	border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.menu a:hover{
+	background: rgba(255,255,255,0.3);
+}
+
+/*Esto viene que cuando se le de click al menu responsive saldra el 
+respectivo menu, usando el transform pero al 0% para que vuelva a su
+posicion original*/
+/*OJO el signo --> ~ <-- quiere decir seleccionar osea que cuando se efectue
+tal cosa seleccioname tal clase y efectua tal cosa*/
+#menu-bar:checked ~ .menu{
+	transform: translateX(0%);
+}
+
+@media (min-width: 1024px){
+	.menu{
+		position: static;
+		width: auto;
+		height: auto;
+		transform: translateX(0%);
+		float: right;
+		display: flex;
+	}
+
+	.menu a{
+		border: none;
+	}
+
+	li{
+		display: inline-block;
+		text-decoration: none;
+	}
+	
+	header label{
+		display: none;
+	}
+}
